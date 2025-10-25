@@ -1,5 +1,7 @@
 |    CONTACT CATALOG    |
 
+
+
 #Beskrivning: 
 - Detta är ett enkelt program som körs i konsolen. 
 - När programmet körs är det enkelt att använda. 
@@ -16,3 +18,9 @@ Det gör koden mer strukturerad, lättare att testa och enklare att bygga vidare p
 
 
 #Skapare: Joco Borghol
+
+![Programvy](image/ContactCatalog.jpg)
+
+
+
+
