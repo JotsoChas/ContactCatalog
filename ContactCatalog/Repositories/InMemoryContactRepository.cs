@@ -9,9 +9,12 @@ namespace ContactCatalog.Repositories
         // Lista som fungerar som vår tillfälliga databas
         private readonly Dictionary<int, Contact> _contacts = new();
 
+        private int _nextId = 1;
+
         // Lägger till en ny kontakt i listan
         public void Add(Contact contact)
-        {
+        {   // Sätter Id endast här när kontakten faktiskt sparas
+            contact.Id = _nextId++;
             _contacts[contact.Id] = contact;
         }
 
@@ -27,7 +30,7 @@ namespace ContactCatalog.Repositories
             // Returnerar första matchningen eller null om ingen hittas
             return _contacts.Values
             .FirstOrDefault(c => c.Email.Equals(email, StringComparison.OrdinalIgnoreCase));
-
         }
+
     }
 }
